@@ -1,4 +1,4 @@
-﻿using BTL.Models;
+using BTL.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -16,7 +16,6 @@ namespace BTL.Controllers
         public IActionResult Index()
         {
             return View();
-            //sửa test
         }
 
         public IActionResult Privacy()
