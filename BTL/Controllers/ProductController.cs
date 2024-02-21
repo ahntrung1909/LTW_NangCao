@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using BTL.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 namespace BTL.Controllers
 {
     public class ProductController : Controller
@@ -8,10 +9,5 @@ namespace BTL.Controllers
         {
             return View();
         }
-
-		public IActionResult Details()
-		{
-			return View();
-		}
-	}
+    }
 }

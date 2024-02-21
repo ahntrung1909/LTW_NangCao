@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using BTL.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<DataContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDB"));
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//ConnectionDB
 
 var app = builder.Build();
 
