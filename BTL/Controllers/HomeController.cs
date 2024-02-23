@@ -1,22 +1,27 @@
 ﻿using BTL.Models;
+using BTL.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace BTL.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        private readonly DataContext _dataContext;
+
+		public HomeController(ILogger<HomeController> logger, DataContext context)
         {
             _logger = logger;
-        }
+			_dataContext = context;
+		}
 
         public IActionResult Index()
         {
-            return View();
-            //sửa test
+            var products = _dataContext.Products.Include("Category").Include("Brand").ToList();
+            return View(products);
         }
 
         public IActionResult Privacy()

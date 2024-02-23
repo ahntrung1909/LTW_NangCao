@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\4.2\\LapTrinhWebNC\\BTL\\BTL\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "E:\\4.2\\LapTrinhWebNC\\BTL\\BTL\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
       "Id": "E:\\4.2\\LapTrinhWebNC\\BTL\\BTL\\wwwroot\\images\\gallery1.jpg",
       "PackagePath": "staticwebassets\\images\\gallery1.jpg"
     },

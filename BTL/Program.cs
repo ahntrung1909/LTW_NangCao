@@ -1,4 +1,12 @@
+using BTL.Repository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:ConnectedDb"]);
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -23,5 +31,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+//Seeding data
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<DataContext>();
+SeedData.SeedingData(context);
 app.Run();
