@@ -1,10 +1,11 @@
 ﻿using BTL.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace BTL.Repository
 {
-	public class DataContext : DbContext
+	public class DataContext : IdentityDbContext<AppUserModel>
 	{
 		public DataContext(DbContextOptions<DataContext> options) : base(options)
 		{
@@ -24,7 +25,7 @@ namespace BTL.Repository
 		public DataContext CreateDbContext(string[] args)
 		{
 			var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-			optionsBuilder.UseSqlServer("Data Source=DESKTOP-171AVQP\\SQLEXPRESS;Initial Catalog=Shopping_Tutorial;Integrated Security=True;Trust Server Certificate=True");
+			optionsBuilder.UseSqlServer("Data Source=WINDOWS-10;Initial Catalog=Shopping_Tutorial;Integrated Security=True;Trust Server Certificate=True");
 
 			return new DataContext(optionsBuilder.Options);
 		}
