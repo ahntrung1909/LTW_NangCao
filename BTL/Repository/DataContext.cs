@@ -1,11 +1,12 @@
 ﻿using BTL.Models;
+using BTL.Models.Domain;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace BTL.Repository
 {
-	public class DataContext : IdentityDbContext<AppUserModel>
+	public class DataContext : IdentityDbContext<ApplicationUser>
 	{
 		public DataContext(DbContextOptions<DataContext> options) : base(options)
 		{
