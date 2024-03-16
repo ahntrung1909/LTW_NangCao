@@ -1,60 +1,95 @@
-﻿using BTL.Models;
-using BTL.Models.ViewModels;
-using Microsoft.AspNetCore.Identity;
+﻿using BTL.Models.DTO;
+using BTL.Repository.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BTL.Controllers
 {
     public class AccountController : Controller
     {
-        private UserManager<AppUserModel> _userManage;
-		private SignInManager<AppUserModel> _signInManage;
-        public AccountController(SignInManager<AppUserModel> signInManager,UserManager<AppUserModel> userManage) {
-            _signInManage = signInManager;
-            _userManage = userManage;
-		}
+        private readonly IUserAuthenticationService _authService;
+        public AccountController(IUserAuthenticationService authService)
+        {
+            this._authService = authService;
+        }
 
-		public IActionResult Login(string returnUrl)
+
+        public IActionResult Login()
         {
-            return View(new LoginViewModel { ReturnUrl = returnUrl});
+            return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginVM)
-        {
-            if (ModelState.IsValid)
-            {
-                Microsoft.AspNetCore.Identity.SignInResult result = await _signInManage.PasswordSignInAsync(loginVM.UserName,loginVM.Password,false,false);
-                if (result.Succeeded)
-                {
-                    return Redirect(loginVM.ReturnUrl ?? "/");  
-                }
-                ModelState.AddModelError("", "Invalid UserName or Password");
-            }
-            return View(loginVM);
-        }
-		public IActionResult Create()
-		{
-			return View();
-		}
+
 
         [HttpPost]
-		public async Task<IActionResult> Create(UserModel user)
-		{
-            if (ModelState.IsValid)
+        public async Task<IActionResult> Login(LoginModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+            var result = await _authService.LoginAsync(model);
+            if (result.StatusCode == 1)
             {
-                AppUserModel newUser = new AppUserModel { UserName = user.UserName, Email = user.Email};
-                IdentityResult result = await _userManage.CreateAsync(newUser,user.Password);
-                if(result.Succeeded)
-                {
-                    TempData["success"] = "Tạo user thành công";
-                    return Redirect("/account/login");
-                }
-                foreach(IdentityError error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
+                return RedirectToAction("Index", "Home");
             }
-			return View(user);
-		}
-	}
+            else
+            {
+                TempData["msg"] = result.Message;
+                return RedirectToAction(nameof(Login));
+            }
+        }
+
+        public IActionResult Registration()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Registration(RegistrationModel model)
+        {
+            if (!ModelState.IsValid) { return View(model); }
+            model.Role = "user";
+            var result = await this._authService.RegisterAsync(model);
+            TempData["msg"] = result.Message;
+            return Redirect("/account/login");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Logout()
+        {
+            await this._authService.LogoutAsync();
+            return RedirectToAction(nameof(Login));
+        }
+        [AllowAnonymous]
+        public async Task<IActionResult> RegisterAdmin()
+        {
+            RegistrationModel model = new RegistrationModel
+            {
+                Username = "admin",
+                Email = "admin@gmail.com",
+                FirstName = "John",
+                LastName = "Doe",
+                Password = "Admin@12345"
+            };
+            model.Role = "admin";
+            var result = await this._authService.RegisterAsync(model);
+            return Ok(result);
+        }
+
+        [Authorize]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+            var result = await _authService.ChangePasswordAsync(model, User.Identity.Name);
+            TempData["msg"] = result.Message;
+            return RedirectToAction(nameof(ChangePassword));
+        }
+
+    }
 }

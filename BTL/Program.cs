@@ -1,7 +1,10 @@
-using BTL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using BTL.Repository;
+using BTL.Models.Domain;
+using BTL.Repository.Abstract;
+using BTL.Repository.Implementation;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,20 +17,12 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 //Add identity
-builder.Services.AddIdentity<AppUserModel,IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
     .AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 
-builder.Services.Configure<IdentityOptions>(options =>
-{
-    // Password settings.
-    options.Password.RequireDigit = true;
-    options.Password.RequireLowercase = true;
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireUppercase = false;
-    options.Password.RequiredLength = 4;
+builder.Services.ConfigureApplicationCookie(options => options.LoginPath = "/UserAuthentication/Login");
 
-    options.User.RequireUniqueEmail = false;
-});
+builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
 
 var app = builder.Build();
 
