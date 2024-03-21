@@ -7988,7 +7988,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.2",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
@@ -7997,11 +7998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\BTL.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj",
       "projectName": "BTL",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\BTL.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8057,6 +8058,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [

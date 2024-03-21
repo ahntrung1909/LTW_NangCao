@@ -24,8 +24,14 @@ builder.Services.ConfigureApplicationCookie(options => options.LoginPath = "/Use
 
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
 
-var app = builder.Build();
+builder.Services.AddSession(options =>
+{
+	options.IOTimeout = TimeSpan.FromMinutes(30);
+	options.Cookie.IsEssential = true;
+});
 
+var app = builder.Build();
+app.UseSession();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
