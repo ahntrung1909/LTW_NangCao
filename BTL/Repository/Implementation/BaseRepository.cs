@@ -4,7 +4,7 @@ using BTL.Repository;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Dotnet6MvcLogin.Repository.Implementation
+namespace BTL.Repository.Implementation
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {

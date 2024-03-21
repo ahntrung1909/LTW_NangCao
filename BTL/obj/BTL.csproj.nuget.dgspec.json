@@ -11,7 +11,7 @@
         "projectName": "BTL",
         "projectPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,6 +67,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
