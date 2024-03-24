@@ -65,8 +65,8 @@ namespace BTL.Controllers
             {
                 Username = "admin",
                 Email = "admin@gmail.com",
-                FirstName = "John",
-                LastName = "Doe",
+                FirstName = "admin",
+                LastName = "admin",
                 Password = "Admin@12345"
             };
             model.Role = "admin";
