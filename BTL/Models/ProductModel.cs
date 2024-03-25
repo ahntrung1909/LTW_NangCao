@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BTL.Repository.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BTL.Models
@@ -16,7 +17,6 @@ namespace BTL.Models
 
 		public string Slug { get; set; }
 
-		[Required, Column(TypeName = "decimal(18,4)"), MinLength(4, ErrorMessage = "Yêu cầu nhập tên Giá sản phẩm")]
 		public decimal Price { get; set; }
 
 		public int BrandId { get; set; }
@@ -25,5 +25,9 @@ namespace BTL.Models
 		public BrandModel Brand { get; set; }
 
 		public string Image { get; set; }
+
+		[NotMapped]
+		[FileExtension]
+		public IFormFile ImageUpload { get; set; }
 	}
 }

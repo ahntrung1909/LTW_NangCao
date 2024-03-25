@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTL",
+    "\\BTL\\Views",
+    "\\BTL\\Views\\Brand"
   ],
-  "SelectedNode": "\\BTL.sln",
+  "SelectedNode": "\\BTL\\Views\\Brand\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

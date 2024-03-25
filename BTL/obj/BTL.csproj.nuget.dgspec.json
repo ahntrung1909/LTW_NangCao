@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\BTLWWEBNC\\BTL\\BTL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj": {
+    "C:\\Users\\Admin\\Desktop\\BTLWWEBNC\\BTL\\BTL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\BTLWWEBNC\\BTL\\BTL.csproj",
         "projectName": "BTL",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\BTL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\BTL\\BTL\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\BTLWWEBNC\\BTL\\BTL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\BTLWWEBNC\\BTL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

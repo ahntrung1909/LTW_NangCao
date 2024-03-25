@@ -7,7 +7,7 @@
 	<meta name="author" content="">
 	<title>Home | E-Shopper</title>
 	<link href="~/css/bootstrap.min.css" rel="stylesheet">
-	<link href="~/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link href="~/css/prettyPhoto.css" rel="stylesheet">
 	<link href="~/css/price-range.css" rel="stylesheet">
 	<link href="~/css/animate.css" rel="stylesheet">
@@ -97,9 +97,7 @@
 								}
 								@if (!string.IsNullOrEmpty(User.Identity.Name))
 								{
-									<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-									<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-									<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+									<li><a asp-controller="Admin"><i class="fa fa-user"></i>Hi @User.Identity.Name </a></li>
 									<li><a asp-action="ChangePassword" asp-controller="Account"><i class="fa fa-lock"></i> ChangePassword</a></li>
 									<li><a asp-action="Logout" asp-controller="Account"><i class="fa fa-lock"></i> Logout</a></li>
 								}else{
@@ -132,10 +130,8 @@
 									<a asp-controller="Product">Shop<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
 										<li><a asp-action="Index" asp-controller="Category">Categories</a></li>
-										<li><a asp-action="Details" asp-controller="Product">Product Details</a></li>
-										<li><a asp-action="Checkout" asp-controller="Cart">Checkout</a></li>
+										<li><a asp-action="Checkout" asp-controller="Checkout">Order Details</a></li>
 										<li><a asp-controller="Cart">Cart</a></li>
-										<li><a>Login</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -145,7 +141,6 @@
 										<li><a href="blog-single.html">Blog Single</a></li>
 									</ul>
 								</li>
-								<li><a href="404.html">404</a></li>
 								<li><a href="contact-us.html">Contact</a></li>
 							</ul>
 						</div>
@@ -174,40 +169,20 @@
 
 						<div class="carousel-inner">
 							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free E-Commerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png" class="pricing" alt="" />
+								<div class="col-sm-11">
+									<img src="https://i.pinimg.com/originals/ef/80/83/ef8083bfe79088dc00bd8eca9c821cd5.jpg" width="100%" />
 								</div>
 							</div>
 							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>100% Responsive Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
+								<div class="col-sm-11">
+									<img src="https://img.freepik.com/premium-psd/gaming-computer-product-sale-advertising-social-media-banner_252779-1122.jpg" width="100%" />
 								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png" class="pricing" alt="" />
-								</div>
+								
 							</div>
 
 							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free Ecommerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png" class="pricing" alt="" />
+								<div class="col-sm-11">
+									<img src="https://iazure.world/wp-content/uploads/2019/06/MacBook-Air_Web-Banner_2x1-scaled.jpg" width="100%" />
 								</div>
 							</div>
 
