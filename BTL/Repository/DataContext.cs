@@ -1,4 +1,4 @@
-﻿using BTL.Models;
+﻿	using BTL.Models;
 using BTL.Models.Domain;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +21,8 @@ namespace BTL.Repository
 		public DbSet<OrderModel> Orders { get; set; }
 		public DbSet<OrderDetails> OrderDetails { get; set; }
 
+	
+
 	}
 
 	public class DataContextFactory : IDesignTimeDbContextFactory<DataContext>
@@ -28,7 +30,7 @@ namespace BTL.Repository
 		public DataContext CreateDbContext(string[] args)
 		{
 			var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-			optionsBuilder.UseSqlServer("Data Source=WINDOWS-10;Initial Catalog=Shopping_Tutorial;Integrated Security=True;Trust Server Certificate=True");
+			optionsBuilder.UseSqlServer("Data Source=Admin\\MAY1;Initial Catalog=Shopping_Tutorial;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
 			return new DataContext(optionsBuilder.Options);
 		}

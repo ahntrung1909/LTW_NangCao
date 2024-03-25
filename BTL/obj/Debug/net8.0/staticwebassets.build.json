@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oLTLV8dIWpIBbl54JjixKhzSuSXjvWTeujbYF6MerHI=",
+  "Hash": "nAfUAQ7EmxDQxJMfUhD0rZlb0rGC059BsV7JpoxWOng=",
   "Source": "BTL",
   "BasePath": "_content/BTL",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BTL\\wwwroot",
       "Source": "BTL",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BTL.styles.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BTL.styles.css",
       "SourceId": "BTL",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BTL",
       "RelativePath": "BTL.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BTL.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BTL.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTL.bundle.scp.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTL.bundle.scp.css",
       "SourceId": "BTL",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BTL",
       "RelativePath": "BTL.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,32 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTL.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTL.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\animate.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\backend\\js\\site.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "backend/js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\backend\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\animate.css",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/animate.css",
       "AssetKind": "All",
@@ -74,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\font-awesome.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\font-awesome.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/font-awesome.min.css",
       "AssetKind": "All",
@@ -112,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\main.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -131,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\prettyPhoto.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\prettyPhoto.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/prettyPhoto.css",
       "AssetKind": "All",
@@ -150,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\prettyPhoto.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\price-range.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\price-range.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/price-range.css",
       "AssetKind": "All",
@@ -169,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\price-range.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\css\\responsive.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\css\\responsive.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "css/responsive.css",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\favicon.ico",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\images\\1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\1.jpg",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "images/1.jpg",
       "AssetKind": "All",
@@ -226,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\images\\2.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\2.jpg",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "images/2.jpg",
       "AssetKind": "All",
@@ -245,10 +264,48 @@
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\images\\gallery1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\Dell 2.jpg",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "images/Dell 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Dell 2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\Dell.jpg",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "images/Dell.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Dell.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\gallery1.jpg",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "images/gallery1.jpg",
       "AssetKind": "All",
@@ -264,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -283,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\contact.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\contact.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/contact.js",
       "AssetKind": "All",
@@ -302,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\js\\contact.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\gmaps.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\gmaps.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/gmaps.js",
       "AssetKind": "All",
@@ -321,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\js\\gmaps.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\html5shiv.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\html5shiv.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/html5shiv.js",
       "AssetKind": "All",
@@ -340,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\js\\html5shiv.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\jquery.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\jquery.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/jquery.js",
       "AssetKind": "All",
@@ -359,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\jquery.prettyPhoto.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/jquery.prettyPhoto.js",
       "AssetKind": "All",
@@ -378,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.prettyPhoto.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\jquery.scrollUp.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/jquery.scrollUp.min.js",
       "AssetKind": "All",
@@ -397,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.scrollUp.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\main.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -416,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\js\\price-range.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\price-range.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "js/price-range.js",
       "AssetKind": "All",
@@ -435,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\js\\price-range.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -454,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -473,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -492,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -511,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -530,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -549,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -568,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -587,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -606,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -625,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -644,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -663,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -682,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -701,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -720,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -739,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -758,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -777,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -796,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -815,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -834,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -910,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -929,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -948,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -967,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -986,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1005,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1024,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1062,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1081,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1100,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1138,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1157,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1176,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1195,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1214,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1233,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1252,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1271,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1290,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1309,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1328,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1347,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1366,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1385,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1404,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1423,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1442,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1461,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1480,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1499,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "BTL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
       "BasePath": "_content/BTL",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1516,6 +1573,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\media\\products\\ef9ebe25-925d-4976-9572-36d81567683f_Dell 2.jpg",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "media/products/ef9ebe25-925d-4976-9572-36d81567683f_Dell 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\products\\ef9ebe25-925d-4976-9572-36d81567683f_Dell 2.jpg"
     }
   ]
 }

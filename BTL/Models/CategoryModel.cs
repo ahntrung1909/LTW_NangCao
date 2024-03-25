@@ -13,7 +13,7 @@ namespace BTL.Models
 		[Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Mô tả danh mục")]
 		public string Description { get; set; }
 
-		[Required]
+		
 		public string Slug { get; set; }
 
 		public int Status { get; set; }
