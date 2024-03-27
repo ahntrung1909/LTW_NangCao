@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\images\\2.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\404\\404.png",
+      "PackagePath": "staticwebassets\\images\\404\\404.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\Dell 2.jpg",
       "PackagePath": "staticwebassets\\images\\Dell 2.jpg"
     },
@@ -57,8 +61,236 @@
       "PackagePath": "staticwebassets\\images\\Dell.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\blog-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\blog-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\blog-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\man-four.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-four.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\man-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\man-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\man-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\blog\\socials.png",
+      "PackagePath": "staticwebassets\\images\\blog\\socials.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\cart\\one.png",
+      "PackagePath": "staticwebassets\\images\\cart\\one.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\cart\\three.png",
+      "PackagePath": "staticwebassets\\images\\cart\\three.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\cart\\two.png",
+      "PackagePath": "staticwebassets\\images\\cart\\two.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\gallery1.jpg",
       "PackagePath": "staticwebassets\\images\\gallery1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\bg_border.png",
+      "PackagePath": "staticwebassets\\images\\home\\bg_border.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\gallery1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\gallery2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\gallery3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\gallery4.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\girl1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\girl2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\girl3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\iframe1.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\iframe2.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\iframe3.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\iframe4.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\logo.png",
+      "PackagePath": "staticwebassets\\images\\home\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\map.png",
+      "PackagePath": "staticwebassets\\images\\home\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\new.png",
+      "PackagePath": "staticwebassets\\images\\home\\new.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\partner1.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\partner2.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\partner3.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\partner4.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\pricing.png",
+      "PackagePath": "staticwebassets\\images\\home\\pricing.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product4.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product5.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\product6.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\recommend1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\recommend2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\recommend3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\sale.png",
+      "PackagePath": "staticwebassets\\images\\home\\sale.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\searchicon.png",
+      "PackagePath": "staticwebassets\\images\\home\\searchicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\home\\shipping.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\shipping.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\new.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\rating.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\rating.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\share.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\share.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\similar1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\similar2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\product-details\\similar3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\advertisement.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\advertisement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product10.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product11.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product12.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product7.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product8.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\images\\shop\\product9.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product9.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\js\\bootstrap.min.js",
@@ -325,8 +557,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\media\\products\\099baa59-1e74-424d-9faf-8d18d7cfd367_Dell 2.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\099baa59-1e74-424d-9faf-8d18d7cfd367_Dell 2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\media\\products\\ef9ebe25-925d-4976-9572-36d81567683f_Dell 2.jpg",
       "PackagePath": "staticwebassets\\media\\products\\ef9ebe25-925d-4976-9572-36d81567683f_Dell 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL\\wwwroot\\media\\products\\fddb1547-6b55-4146-9347-c12be578b756_Dell.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\fddb1547-6b55-4146-9347-c12be578b756_Dell.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BTL.Microsoft.AspNetCore.StaticWebAssets.props",

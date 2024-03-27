@@ -61,11 +61,6 @@ app.MapControllerRoute(
     defaults: new {controller = "Category",action="Index"});
 
 app.MapControllerRoute(
-	name: "order",
-	pattern: "/order/{Slug?}",
-	defaults: new { controller = "Order", action = "Index" });
-
-app.MapControllerRoute(
     name: "brand",
     pattern: "/brand/{Slug?}",
     defaults: new { controller = "Brand", action = "Index" });
