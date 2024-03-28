@@ -18,11 +18,13 @@
 					<a href="">
 						<div class="single-products">
 							<div class="productinfo text-center">
-								<img src="~/media/products/@item.Image" alt="@item.Name" width="100%" />
-								<h2>$@item.Price</h2>
-								<p>@item.Name</p>
-								<p>Danh mục: @item.Category.Name</p>
-								<p>Thương hiệu: @item.Brand.Name</p>
+								<a asp-action="Details" asp-controller="Product" asp-route-Id="@item.Id">
+									<img src="~/media/products/@item.Image" alt="@item.Name" width="100%" />
+									<h2>$@item.Price</h2>
+									<p>@item.Name</p>
+									<p>Danh mục: @item.Category.Name</p>
+									<p>Thương hiệu: @item.Brand.Name</p>
+								</a>
 								<a class="btn btn-default add-to-cart" asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
 							@* <div class="product-overlay">
@@ -37,8 +39,16 @@
 				</div>
 			</div>
 		}
-
+		
 
 	</div><!--features_items-->
-
+	<div id="pagination">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+		</ul>
+	</div>
 </div>

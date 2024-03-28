@@ -4,8 +4,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 <style>
-	img {
-		width: 90%;
+	.cart_product img {
+		width: 200px;
 	}
 </style>
 <h4>Cart Page</h4>
@@ -24,7 +24,8 @@
 				<thead>
 					<tr class="cart_menu">
 						<td class="image">Item</td>
-						<td class="description"></td>
+						<td class="name">Name</td>
+						
 						<td class="price">Price</td>
 						<td class="quantity">Quantity</td>
 						<td class="total">Total</td>
@@ -40,10 +41,10 @@
 								<td class="cart_product">
 									<a href=""><img src="~/media/products/@iteam.Image" alt=""></a>
 								</td>
-								<td class="cart_description">
-									<h4><a href="">@iteam.ProductName</a></h4>
-
+								<td class="cart_name">
+									<p>@iteam.ProductName</p>
 								</td>
+								
 								<td class="cart_price">
 									<p>@iteam.Price</p>
 								</td>

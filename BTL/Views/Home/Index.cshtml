@@ -3,9 +3,9 @@
 	@Html.Partial("_SidebarPartial")
 </div>
 <style>
-	.product-image-wrapper {
-    height: 450px;
-}
+	.productinfo img {
+		width: 70%;
+	}
 </style>
 <div class="col-sm-9 padding-right">
 	<div class="features_items">
@@ -40,7 +40,16 @@
 			</div>
 		}
 		
+		
 
 	</div><!--features_items-->
-
+	<div id="pagination">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+		</ul>
+	</div>
 </div>

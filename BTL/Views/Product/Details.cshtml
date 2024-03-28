@@ -3,14 +3,20 @@
 	<div class="col-sm-3">
 		@Html.Partial("_SidebarPartial")
 	</div>
-
+	<style>
+		.view-product img {
+			
+			height: 250px;
+			width: 100%;
+		}
+		</style>
 	<div class="col-sm-9 padding-right">
 		<div class="product-details">
 			<!--product-details-->
 			<div class="col-sm-5">
 				<div class="view-product">
-					<img src=" ~/images/@Model.Image" alt="" />
-					<h3>ZOOM</h3>
+					<img width="200px" height="200px" src="~/media/products/@Model.Image" alt="" />
+					
 				</div>
 				<div id="similar-product" class="carousel slide" data-ride="carousel">
 
@@ -24,12 +30,7 @@
 					</div>
 
 					<!-- Controls -->
-					<a class="left item-control" href="#similar-product" data-slide="prev">
-						<i class="fa fa-angle-left"></i>
-					</a>
-					<a class="right item-control" href="#similar-product" data-slide="next">
-						<i class="fa fa-angle-right"></i>
-					</a>
+					
 				</div>
 
 			</div>
