@@ -913,3 +913,7 @@ C:\Users\Admin\Desktop\New folder\BTL\obj\Debug\net8.0\refint\BTL.dll
 C:\Users\Admin\Desktop\New folder\BTL\obj\Debug\net8.0\BTL.pdb
 C:\Users\Admin\Desktop\New folder\BTL\obj\Debug\net8.0\BTL.genruntimeconfig.cache
 C:\Users\Admin\Desktop\New folder\BTL\obj\Debug\net8.0\ref\BTL.dll
+C:\Users\Administrator\Desktop\btl\BTL\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Administrator\Desktop\btl\BTL\bin\Debug\net8.0\cloudscribe.Pagination.Models.dll
+C:\Users\Administrator\Desktop\btl\BTL\bin\Debug\net8.0\cloudscribe.Web.Pagination.dll
+C:\Users\Administrator\Desktop\btl\BTL\obj\Debug\net8.0\BTL.MvcApplicationPartsAssemblyInfo.cs

@@ -3,6 +3,7 @@ using BTL.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Drawing.Printing;
 
 namespace BTL.Controllers
 {
@@ -20,11 +21,26 @@ namespace BTL.Controllers
 
         public IActionResult Index()
         {
-            var products = _dataContext.Products.Include("Category").Include("Brand").ToList();
-            return View(products);
+            return View();
         }
+        [HttpGet]
+        public IActionResult GetList(int page = 1, int pageSize = 6)
+        {
+            // Tổng số sản phẩm
+            var totalProducts = _dataContext.Products.Count();
 
-        public IActionResult Privacy()
+            // Tính toán số trang dựa trên tổng số sản phẩm và kích thước trang
+            var totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+
+            // Lấy danh sách sản phẩm cho trang hiện tại
+            var products = _dataContext.Products.Include("Category").Include("Brand")
+                .OrderBy(p => p.Id) // Sắp xếp theo Id hoặc bất kỳ trường nào bạn muốn
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            return Json(new { data = products , TotalPages = totalPages, CurrentPage = page });
+		}
+		public IActionResult Privacy()
         {
             return View();
         }

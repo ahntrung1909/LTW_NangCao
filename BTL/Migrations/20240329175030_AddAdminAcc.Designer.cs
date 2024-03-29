@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BTL.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240327132152_Initial")]
-    partial class Initial
+    [Migration("20240329175030_AddAdminAcc")]
+    partial class AddAdminAcc
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
