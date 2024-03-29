@@ -17,21 +17,23 @@
 </div>
 @section Scripts{
 	<script>
-        $(document).ready(function () {
+        document.addEventListener("DOMContentLoaded", function () {
             loadProducts(1);
         });
 
         var pageLoaded = false;
 
         function loadProducts(page) {
-            $.ajax({
-                type: "GET",
-                url: "/Home/GetList",
-                data: { page: page },
-                success: function (result) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/Home/GetList?page=" + page, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var result = JSON.parse(xhr.responseText);
                     if (!pageLoaded) {
-                        $('.features_items').empty();
-                        $.each(result.data, function (index, item) {
+                        var featuresItems = document.querySelector('.features_items');
+                        featuresItems.innerHTML = ''; // Xóa nội dung cũ
+
+                        result.data.forEach(function (item) {
                             var productHtml = '<div class="col-sm-4">' +
                                 '<div class="product-image-wrapper">' +
                                 '<div class="single-products">' +
@@ -48,18 +50,16 @@
                                 '</div>' +
                                 '</div>' +
                                 '</div>';
-                            $('.features_items').append(productHtml);
+                            featuresItems.insertAdjacentHTML('beforeend', productHtml);
                         });
-
                     }
 
-                    $('#pagination').empty();
+                    var paginationDiv = document.getElementById('pagination');
+                    paginationDiv.innerHTML = ''; // Xóa nội dung cũ
                     Pagination(result.currentPage, result.totalPages);
-                },
-                error: function (req, status, error) {
-                    console.log(status);
                 }
-            });
+            };
+            xhr.send();
         }
 
         function Pagination(currentPage, totalPages) {
@@ -81,12 +81,11 @@
             }
             paginationHtml += '</ul>';
 
-            $('#pagination').html(paginationHtml);
+            var paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = paginationHtml;
         }
 
         function NextPage(page, pageSize) {
-            console.log(page)
-            console.log(pageSize)
             loadProducts(page);
         }
         
