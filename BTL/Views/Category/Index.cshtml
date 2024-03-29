@@ -1,4 +1,8 @@
 ﻿@model IEnumerable<ProductModel>
+@{
+	var firstItem = Model.FirstOrDefault(); // Lấy ra phần tử đầu tiên trong mảng
+	string category = firstItem != null ? firstItem.Category.Name : "Unknown Brand";
+}
 <div class="col-sm-3">
 	@Html.Partial("_SidebarPartial")
 </div>
@@ -10,7 +14,7 @@
 <div class="col-sm-9 padding-right">
 	<div class="features_items">
 		<!--features_items-->
-		<h2 class="title text-center">Features Items</h2>
+		<h2 class="title text-center">@category</h2>
 		@foreach (var item in Model)
 		{
 			<div class="col-sm-4">
@@ -20,7 +24,7 @@
 							<div class="productinfo text-center">
 								<a asp-action="Details" asp-controller="Product" asp-route-Id="@item.Id">
 									<img src="~/media/products/@item.Image" alt="@item.Name" width="100%" />
-									<h2>$@item.Price</h2>
+									<h2>@item.Price.ToString("#,##0") VNĐ</h2>
 									<p>@item.Name</p>
 									<p>Danh mục: @item.Category.Name</p>
 									<p>Thương hiệu: @item.Brand.Name</p>

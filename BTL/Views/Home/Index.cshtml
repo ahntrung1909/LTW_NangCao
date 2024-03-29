@@ -2,54 +2,93 @@
 <div class="col-sm-3">
 	@Html.Partial("_SidebarPartial")
 </div>
-<style>
-	.productinfo img {
-		width: 70%;
-	}
-</style>
+
 <div class="col-sm-9 padding-right">
 	<div class="features_items">
 		<!--features_items-->
 		<h2 class="title text-center">Features Items</h2>
-		@foreach(var item in Model)
-		{
-			<div class="col-sm-4">
-				<div class="product-image-wrapper">
-						<div class="single-products">
-							
-							<div class="productinfo text-center">
-								<a asp-action="Details" asp-controller="Product" asp-route-Id="@item.Id">
-								<img src="~/media/products/@item.Image" alt="@item.Name" width="100%"/>
-								<h2>$@item.Price</h2>
-								<p>@item.Name</p>
-								<p>Danh mục: @item.Category.Name</p>
-								<p>Thương hiệu: @item.Brand.Name</p>
-							</a>
-								<a class="btn btn-default add-to-cart" asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-							
-							@* <div class="product-overlay">
-								<div class="overlay-content">
-									<h2>$@item.Price</h2>
-									<p>@item.Name</p>
-									<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-								</div>
-							</div> *@
-						</div>
-				</div>
-			</div>
-		}
-		
-		
 
 	</div><!--features_items-->
 	<div id="pagination">
 		<ul class="pagination">
-			<li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
-			<li class="page-item active"><a class="page-link" href="#">1</a></li>
-			<li class="page-item"><a class="page-link" href="#">2</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
-			<li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+			
 		</ul>
 	</div>
 </div>
+@section Scripts{
+	<script>
+        $(document).ready(function () {
+            loadProducts(1);
+        });
+
+        var pageLoaded = false;
+
+        function loadProducts(page) {
+            $.ajax({
+                type: "GET",
+                url: "/Home/GetList",
+                data: { page: page },
+                success: function (result) {
+                    if (!pageLoaded) {
+                        $('.features_items').empty();
+                        $.each(result.data, function (index, item) {
+                            var productHtml = '<div class="col-sm-4">' +
+                                '<div class="product-image-wrapper">' +
+                                '<div class="single-products">' +
+                                '<div class="productinfo text-center">' +
+                                '<a href="/Product/Details/' + item.id + '">' +
+                                '<img src="/media/products/' + item.image + '" alt="' + item.name + '" width="100%" />' +
+                                '<h2>' + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + '</h2>' +
+                                '<p>' + item.name + '</p>' +
+                                '<p>Danh mục: ' + item.category.name + '</p>' +
+                                '<p>Thương hiệu: ' + item.brand.name + '</p>' +
+                                '</a>' +
+                                '<a class="btn btn-default add-to-cart" href="/Cart/Add/' + item.id + '"><i class="fa fa-shopping-cart"></i>Add to cart</a>' +
+                                '</div>' +
+                                '</div>' +
+                                '</div>' +
+                                '</div>';
+                            $('.features_items').append(productHtml);
+                        });
+
+                    }
+
+                    $('#pagination').empty();
+                    Pagination(result.currentPage, result.totalPages);
+                },
+                error: function (req, status, error) {
+                    console.log(status);
+                }
+            });
+        }
+
+        function Pagination(currentPage, totalPages) {
+            var paginationHtml = '<ul class="pagination">';
+            if (totalPages > 1) {
+                paginationHtml += '<li class="page-item ' + (currentPage === 1 ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+                paginationHtml += 'onclick="' + (currentPage !== 1 ? 'loadProducts(' + (currentPage - 1) + ')' : '') + '">Previous</a></li>';
+
+                for (var i = 1; i <= totalPages; i++) {
+                    paginationHtml += '<li class="page-item ' + (currentPage === i ? 'active' : '') + '">';
+                    paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+                    paginationHtml += 'onclick="loadProducts(' + i + ')">' + i + '</a></li>';
+                }
+
+                paginationHtml += '<li class="page-item ' + (currentPage === totalPages ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+                paginationHtml += 'onclick="' + (currentPage !== totalPages ? 'loadProducts(' + (currentPage + 1) + ')' : '') + '">Next</a></li>';
+            }
+            paginationHtml += '</ul>';
+
+            $('#pagination').html(paginationHtml);
+        }
+
+        function NextPage(page, pageSize) {
+            console.log(page)
+            console.log(pageSize)
+            loadProducts(page);
+        }
+        
+	</script>
+}
