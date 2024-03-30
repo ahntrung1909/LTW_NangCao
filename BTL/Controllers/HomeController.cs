@@ -40,6 +40,23 @@ namespace BTL.Controllers
                 .ToList();
             return Json(new { data = products , TotalPages = totalPages, CurrentPage = page });
 		}
+
+        [HttpGet]
+		public IActionResult Search(string searchText)
+		{
+			// Tìm kiếm trong danh sách sản phẩm theo tên, giá, brand hoặc category
+			var searchResults = _dataContext.Products
+				.Include(p => p.Category)
+				.Include(p => p.Brand)
+				.Where(p =>
+					p.Name.Contains(searchText) ||
+					p.Price.ToString().Contains(searchText) ||
+					p.Brand.Name.Contains(searchText) ||
+					p.Category.Name.Contains(searchText))
+				.ToList();
+
+			return Json(searchResults);
+		}
 		public IActionResult Privacy()
         {
             return View();

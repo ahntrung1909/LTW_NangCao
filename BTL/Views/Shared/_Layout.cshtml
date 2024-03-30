@@ -65,6 +65,187 @@
 		{
 			text-align: center;
 		}
+
+		#searchResults
+		{
+			position: absolute;
+			top: calc(100% + 10px);
+			left: 0;
+			z-index: 999;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+			display: none;
+		}
+
+		#searchResults ul
+		{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#searchResults ul li
+		{
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+		}
+
+		#searchResults ul li:last-child
+		{
+			border-bottom: none;
+		}
+
+		#searchResults ul li a
+		{
+			text-decoration: none;
+			color: #333;
+		}
+
+		#searchResults ul li a:hover
+		{
+			color: #007bff;
+		}
+		.product-item
+		{
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px; /* Khoảng cách giữa các sản phẩm */
+		}
+
+		.product-link
+		{
+			text-decoration: none;
+			color: inherit;
+			display: flex;
+			align-items: center;
+		}
+
+		.product-image
+		{
+			width: 100px; /* Độ rộng của ảnh */
+			height: auto;
+			margin-right: 10px; /* Khoảng cách giữa ảnh và nội dung */
+		}
+
+		.product-info
+		{
+			flex: 1; /* Để nội dung linh hoạt, co giãn để lấp đầy không gian còn trống */
+		}
+
+		.product-name
+		{
+			margin: 0;
+			font-size: 14px; /* Kích thước chữ */
+		}
+
+		.product-price
+		{
+			margin: 0;
+			font-size: 14px; /* Kích thước chữ */
+			color: red; /* Màu chữ */
+		}
+
+		.search_box
+		{
+			position: relative;
+		}
+
+		#searchInput
+		{
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			outline: none;
+		}
+
+		#searchResults
+		{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
+
+		.product-item
+		{
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.product-link
+		{
+			display: flex;
+			text-decoration: none;
+			color: #333;
+		}
+
+		.product-image
+		{
+			width: 80px;
+			height: 80px;
+			margin-right: 10px;
+		}
+
+		.product-info
+		{
+			flex-grow: 1;
+		}
+
+		.product-name
+		{
+			margin: 0 0 5px;
+			font-size: 14px;
+		}
+
+		.product-price
+		{
+			margin: 0;
+			font-size: 16px;
+			color: red;
+		}
+
+		.show-more
+		{
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+
+		.show-more button
+		{
+			padding: 8px 16px;
+			border: none;
+			background-color: #007bff;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			border-radius: 4px;
+			outline: none;
+		}
+
+		.show-more button:hover
+		{
+			background-color: #0056b3;
+		}
+
+		.search_box input
+		{
+			color: #000; /* Màu chữ đen */
+			/* Các thuộc tính khác của ô input */
+		}
+
+
 	</style>
 </head><!--/head-->
 
@@ -184,8 +365,9 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
-							<input type="text" placeholder="Search" />
+							<input type="text" placeholder="Search" id="searchInput" onkeyup="searchProducts(this.value)" />
 						</div>
+						<div id="searchResults" class="search-results"></div>
 					</div>
 				</div>
 			</div>
@@ -416,5 +598,123 @@
 	<script src="~/js/jquery.prettyPhoto.js"></script>
 	<script src="~/js/main.js"></script>
 	@await RenderSectionAsync("Scripts",required:false)
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var searchInput = document.getElementById("searchInput");
+			var searchResults = document.getElementById("searchResults");
+			var currentPage = 1; // Trang hiện tại
+			var pageSize = 3; // Số sản phẩm hiển thị trên mỗi trang
+			var totalResults = 0; // Tổng số kết quả
+			var totalPages = 0; // Tổng số trang
+			var currentResults = []; // Danh sách sản phẩm hiện tại
+
+			// Sự kiện input trên input
+			searchInput.addEventListener("input", function () {
+				var searchText = searchInput.value.trim();
+				if (searchText !== "") {
+					// Gửi yêu cầu AJAX để tìm kiếm
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET", "/Home/Search?searchText=" + searchText, true);
+					xhr.setRequestHeader("Content-Type", "application/json");
+					xhr.onreadystatechange = function () {
+						if (xhr.readyState === XMLHttpRequest.DONE) {
+							if (xhr.status === 200) {
+								var response = JSON.parse(xhr.responseText);
+								totalResults = response.length;
+								currentResults = response;
+								totalPages = Math.ceil(totalResults / pageSize);
+								showSearchResults(currentPage);
+							} else {
+								console.error("Error:", xhr.status);
+							}
+						}
+					};
+					xhr.send();
+				} else {
+					hideSearchResults();
+				}
+			});
+
+			// Sự kiện click trên document
+			document.addEventListener("click", function (event) {
+				if (!searchResults.contains(event.target) && !event.target.classList.contains("show-more") && !event.target.classList.contains("show-all")) {
+					hideSearchResults();
+				}
+			});
+
+			searchResults.addEventListener("click", function (event) {
+				if (event.target && event.target.classList.contains("show-more")) {
+					currentPage++;
+					showSearchResults(currentPage);
+				} else if (event.target && event.target.classList.contains("show-all")) {
+					showAllResults();
+				} else if (event.target && event.target.classList.contains("product-link")) {
+					// Xử lý khi người dùng click vào sản phẩm
+					var productId = event.target.getAttribute('data-product-id');
+					// Thực hiện hành động khi người dùng click vào sản phẩm, ví dụ: chuyển hướng đến trang chi tiết sản phẩm
+					window.location.href = '/Product/Details/' + productId;
+				}
+			});
+
+
+			function showSearchResults(page) {
+				var startIndex = (page - 1) * pageSize;
+				var endIndex = Math.min(startIndex + pageSize, totalResults);
+				var resultList = "";
+				if (currentResults.length > 0) {
+					for (var i = startIndex; i < endIndex; i++) {
+						var item = currentResults[i];
+						resultList += "<div class='product-item'>";
+						resultList += "<a href='/Product/Details/" + item.id + "' class='product-link' data-product-id='" + item.id + "'>";
+						resultList += "<img src='/media/products/" + item.image + "' alt='" + item.name + "' class='product-image'>";
+						resultList += "<div class='product-info'>";
+						resultList += "<h3 class='product-name'>" + item.name + "</h3>";
+						resultList += "<p class='product-price'>Price: " + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + "</p>";
+						resultList += "</div>";
+						resultList += "</a>";
+						resultList += "</div>";
+					}
+					if (endIndex < totalResults) {
+						resultList += "<div class='show-more'><button class='show-more'>Show More</button></div>";
+					} else if (endIndex === totalResults) {
+						resultList += "<div class='show-more'><button class='show-all'>Show All</button></div>";
+					}
+					searchResults.innerHTML = resultList;
+					searchResults.style.display = "block";
+				} else {
+					hideSearchResults();
+				}
+			}
+
+			function hideSearchResults() {
+				searchResults.innerHTML = "";
+				searchResults.style.display = "none";
+			}
+
+			function showAllResults() {
+				var resultList = "";
+				for (var i = 0; i < currentResults.length; i++) {
+					var item = currentResults[i];
+					resultList += "<div class='product-item'>";
+					resultList += "<a href='/Product/Details/" + item.id + "' class='product-link' data-product-id='" + item.id + "'>";
+					resultList += "<img src='/media/products/" + item.image + "' alt='" + item.name + "' class='product-image'>";
+					resultList += "<div class='product-info'>";
+					resultList += "<h3 class='product-name'>" + item.name + "</h3>";
+					resultList += "<p class='product-price'>Price: " + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + "</p>";
+					resultList += "</div>";
+					resultList += "</a>";
+					resultList += "</div>";
+				}
+				searchResults.innerHTML = resultList;
+				searchResults.style.display = "block";
+			}
+		});
+
+	</script>
+
+
+
+
 </body>
 </html>
+
