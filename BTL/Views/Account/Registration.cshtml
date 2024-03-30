@@ -2,10 +2,21 @@
 @{
 	ViewData["Title"] = "Register";
 }
+<style>
+     .signup-form h3
+     {
+         text-align: center;
+     }
+
+     .signup-form
+     {
+         margin-bottom: 30px;
+     }
+</style>
 @Html.ValidationSummary()
 <div class="container">
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-1">
+        <div class="col-sm-6 col-sm-offset-3">
             <div class="signup-form">
                 <h3>Registration</h3>
                 <form asp-action="Registration" method="post">
