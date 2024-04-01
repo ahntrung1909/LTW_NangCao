@@ -537,6 +537,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\1.png",
       "PackagePath": "staticwebassets\\media\\products\\1.png"
     },
@@ -575,6 +579,10 @@
     {
       "Id": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\9.jpg",
       "PackagePath": "staticwebassets\\media\\products\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BTL.Microsoft.AspNetCore.StaticWebAssets.props",

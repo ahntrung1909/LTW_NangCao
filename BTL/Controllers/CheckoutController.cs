@@ -16,9 +16,14 @@ namespace BTL.Controllers
 		public async Task<IActionResult> Checkout()
 		{
 			var userEmail = User.FindFirstValue(ClaimTypes.Email);
-			if(userEmail == null)
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			if (userEmail == null)
 			{
 				return RedirectToAction("Login", "Account");
+			}else if (Cartitems.Sum(x=>x.Quantity)<=0)
+			{
+				TempData["error"] = "Tạo thất bại, giỏ hàng trống";
+				return RedirectToAction("Index", "Cart");
 			}
 			else
 			{
@@ -30,7 +35,7 @@ namespace BTL.Controllers
 				orderItem.CreatedDate = DateTime.Now;
 				_dataContext.Add(orderItem);
 				_dataContext.SaveChanges();
-				List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+				
 				foreach(var cartItem in Cartitems)
 				{
 					var orderDetail = new OrderDetails();

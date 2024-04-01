@@ -7,7 +7,7 @@
 	<meta name="author" content="">
 	<title>@ViewData["title"] - Admin Areas</title>
 	<link href="~/css/bootstrap.min.css" rel="stylesheet">
-	<link href="~/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link href="~/css/prettyPhoto.css" rel="stylesheet">
 	<link href="~/css/price-range.css" rel="stylesheet">
 	<link href="~/css/animate.css" rel="stylesheet">
@@ -45,24 +45,6 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-
-								<li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								@if (User.IsInRole("admin"))
-								{
-									<li><a href="/Admin/Display">Admin Page</a></li>
-								}
-								@if (!string.IsNullOrEmpty(User.Identity.Name))
-								{
-									<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-									<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-									<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-									<li><a asp-action="ChangePassword" asp-controller="Account"><i class="fa fa-lock"></i> ChangePassword</a></li>
-									<li><a asp-action="Logout" asp-controller="Account"><i class="fa fa-lock"></i> Logout</a></li>
-								}
-								else
-								{
-									<li><a asp-action="Login" asp-controller="Account"><i class="fa fa-lock"></i> Login</a></li>
-								}
 							</ul>
 						</div>
 					</div>
@@ -90,6 +72,7 @@
 								<li><a asp-controller="Category">Categories</a></li>
 								<li><a asp-controller="Brand">Brands</a></li>
 								<li><a asp-controller="Order">Orders</a></li>
+								<li><a asp-controller="User">Users</a></li>
 							</ul>
 						</div>
 					</div>

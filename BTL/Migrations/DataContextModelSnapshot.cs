@@ -159,7 +159,7 @@ namespace BTL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("OrderCode")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -175,6 +175,8 @@ namespace BTL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderCode");
+
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderDetails");
@@ -182,17 +184,11 @@ namespace BTL.Migrations
 
             modelBuilder.Entity("BTL.Models.OrderModel", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("OrderCode")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("OrderCode")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -200,7 +196,7 @@ namespace BTL.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("OrderCode");
 
                     b.ToTable("Orders");
                 });
@@ -380,11 +376,17 @@ namespace BTL.Migrations
 
             modelBuilder.Entity("BTL.Models.OrderDetails", b =>
                 {
+                    b.HasOne("BTL.Models.OrderModel", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderCode");
+
                     b.HasOne("BTL.Models.ProductModel", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });

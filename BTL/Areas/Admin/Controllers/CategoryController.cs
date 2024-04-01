@@ -76,12 +76,6 @@ namespace BTL.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 category.Slug = category.Name.Replace(" ", "-");
-                var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug);
-                if (slug != null)
-                {
-                    ModelState.AddModelError("", "Danh mục đã có!");
-                    return View(category);
-                } 
                 _dataContext.Update(category);
                 await _dataContext.SaveChangesAsync();
                 TempData["success"] = "Sửa thành công";

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VE621l2LbGnL8ThIlHkYw95KxwlaX2zWaIDRREy3EWc=",
+  "Hash": "v8d6UNNs6cKs8F7241jtk1g9oVYR5tzu87r+32tlSsQ=",
   "Source": "BTL",
   "BasePath": "_content/BTL",
   "Mode": "Default",
@@ -2582,6 +2582,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "media/products/0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\1.png",
       "SourceId": "BTL",
       "SourceType": "Discovered",
@@ -2770,6 +2789,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\products\\9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg",
+      "SourceId": "BTL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\btl\\BTL\\wwwroot\\",
+      "BasePath": "_content/BTL",
+      "RelativePath": "media/products/b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg"
     }
   ]
 }

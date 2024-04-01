@@ -40,8 +40,6 @@ namespace BTL.Areas.Admin.Controllers
 					return View(brand);
 				}
 
-				
-
 				_dataContext.Add(brand);
 				await _dataContext.SaveChangesAsync();
 				TempData["success"] = "Thêm thành công";
@@ -76,12 +74,6 @@ namespace BTL.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 brand.Slug = brand.Name.Replace(" ", "-");
-                var slug = await _dataContext.Brands.FirstOrDefaultAsync(p => p.Slug == brand.Slug);
-                if (slug != null)
-                {
-                    ModelState.AddModelError("", "Thương hiệu đã có!");
-                    return View(brand);
-                } 
                 _dataContext.Update(brand);
                 await _dataContext.SaveChangesAsync();
                 TempData["success"] = "Sửa thành công";

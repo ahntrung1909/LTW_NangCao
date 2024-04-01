@@ -17,6 +17,8 @@ namespace BTL.Controllers
 
 		public async Task<IActionResult> Index(string Slug = "")
         {
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
 			BrandModel brand = _dataContext.Brands.Where(c => c.Slug == Slug).FirstOrDefault();
 			if(brand == null)
 			{

@@ -14,7 +14,9 @@ namespace BTL.Controllers
 		}
 		public IActionResult Index()
 		{
+			
 			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
 			CartItemViewModel cartVM = new()
 			{
 				CartItems = Cartitems,
@@ -24,7 +26,7 @@ namespace BTL.Controllers
 		}
 		public IActionResult Checkout()
 		{
-			return View("~/Views/Checkout/Index.cshtml");
+			return View();
 		}
 		public async Task<IActionResult> Add(int Id)
 		{

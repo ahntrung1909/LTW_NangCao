@@ -1,4 +1,5 @@
-﻿using BTL.Repository;
+﻿using BTL.Models;
+using BTL.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BTL.Controllers
@@ -13,11 +14,15 @@ namespace BTL.Controllers
 
 		public IActionResult Index()
         {
-            return View();
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
+			return View();
         }
 
 		public async Task<IActionResult> Details(int Id)
 		{
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
 			if (Id == null)
 			{
 				return RedirectToAction("Index");

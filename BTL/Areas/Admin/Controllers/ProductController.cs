@@ -91,13 +91,6 @@ namespace BTL.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 product.Slug = product.Name.Replace(" ", "-");
-                var slug = await _dataContext.Products.FirstOrDefaultAsync(p => p.Slug == product.Slug);
-                if (slug != null)
-                {
-                    ModelState.AddModelError("", "Sản phẩm đã có!");
-                    return View(product);
-                }
-
                 if (product.ImageUpload != null)
                 {
                     string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
