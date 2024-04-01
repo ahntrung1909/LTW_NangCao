@@ -1,4 +1,5 @@
 ﻿using BTL.Models;
+using BTL.Models.ViewModels;
 using BTL.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -21,8 +22,10 @@ namespace BTL.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+            ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
+			return View();
+		}
         [HttpGet]
         public IActionResult GetList(int page = 1, int pageSize = 6)
         {

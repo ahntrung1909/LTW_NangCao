@@ -1,4 +1,6 @@
-﻿using BTL.Models.DTO;
+﻿using BTL.Models;
+using BTL.Models.DTO;
+using BTL.Repository;
 using BTL.Repository.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +18,9 @@ namespace BTL.Controllers
 
         public IActionResult Login()
         {
-            return View();
+			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
+			return View();
         }
 
 
@@ -77,6 +81,8 @@ namespace BTL.Controllers
         [Authorize]
         public IActionResult ChangePassword()
         {
+            List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+            ViewData["CartCount"] = Cartitems.Sum(x => x.Quantity);
             return View();
         }
 

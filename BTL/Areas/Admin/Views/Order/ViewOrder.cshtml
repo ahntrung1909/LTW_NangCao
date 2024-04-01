@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<OrderDetails>
 @{
-    ViewData["title"] = "Order VIew";
+    ViewData["title"] = "Order View";
 }
 
 <h3>List Orders</h3>
@@ -10,11 +10,11 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Orders Code</th>
-            <th scope="col">User Name</th>
-            <th scope="col">ProductId</th>
-            <th scope="col">Quatity</th>
+            <th scope="col">Email</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Quantity</th>
             <th scope="col">Price</th>
-
         </tr>
     </thead>
     <tbody>
@@ -24,11 +24,11 @@
                 <th scope="row">@item.Id</th>
                 <td>@item.OrderCode</td>
                 <td>@item.UserName</td>
-                <td>@item.ProductId</td>
+                <td>@item.Product.Name</td>
+                <td><img src="/media/products/@item.Product.Image" alt="@item.Product.Name" width="100"></td>
                 <td>@item.Quantity</td>
                 <td>@item.Price</td>
             </tr>
         }
-
     </tbody>
 </table>

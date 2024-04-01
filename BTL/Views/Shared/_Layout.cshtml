@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+	var cartvm = ViewData["CartCount"];
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -23,7 +26,10 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<style>
-		
+		.cart-item-number
+		{
+			color: red; /* Màu chữ đỏ */
+		}
 		.productinfo img
 		{
 			width: 80%;
@@ -66,6 +72,11 @@
 			text-align: center;
 		}
 
+		.search-results
+		{
+			max-height: 300px; /* Chiều cao tối đa của vùng kết quả */
+			overflow-y: auto; /* Tạo thanh cuộn dọc khi nội dung vượt quá kích thước */
+		}
 		#searchResults
 		{
 			position: absolute;
@@ -315,14 +326,14 @@
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
 								
-								<li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Cart</a></li> 
-								@if (User.IsInRole("admin"))
+								<li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Cart (<span class="cart-item-number">@cartvm</span>)</a></li>
+								@if (User.Identity.Name=="admin")
 								{
-									<li><a href="/Admin/Display">Admin Page</a></li>
+									<li><a asp-controller="Admin">Admin Page</a></li>
 								}
 								@if (!string.IsNullOrEmpty(User.Identity.Name))
 								{
-									<li><a  asp-controller="Product"><i class="fa fa-user"></i>Hi @User.Identity.Name </a></li>
+									<li><a  asp-controller="Order"><i class="fa fa-user"></i>Hi @User.Identity.Name </a></li>
 									<li><a asp-action="ChangePassword" asp-controller="Account"><i class="fa fa-lock"></i> ChangePassword</a></li>
 									<li><a asp-action="Logout" asp-controller="Account"><i class="fa fa-lock"></i> Logout</a></li>
 								}else{
@@ -352,7 +363,7 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
 								<li class="dropdown">
-									<a asp-controller="Product">Shop<i class="fa fa-angle-down"></i></a>
+									<a  href="#">Shop<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
 										<li><a asp-action="Checkout" asp-controller="Checkout">Order Details</a></li>
 										<li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
@@ -365,9 +376,12 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
-							<input type="text" placeholder="Search" id="searchInput" onkeyup="searchProducts(this.value)" />
+							<input type="text" placeholder="Search" id="searchInput" onkeyup="searchProducts(this.value)" onkeypress="handleKeyPress(event)" />
 						</div>
-						<div id="searchResults" class="search-results"></div>
+						<!-- Thêm một div bao quanh #searchResults để sử dụng thanh cuộn -->
+						<div class="search-results-container">
+							<div id="searchResults" class="search-results"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -646,23 +660,22 @@
 				if (event.target && event.target.classList.contains("show-more")) {
 					currentPage++;
 					showSearchResults(currentPage);
-				} else if (event.target && event.target.classList.contains("show-all")) {
-					showAllResults();
-				} else if (event.target && event.target.classList.contains("product-link")) {
-					// Xử lý khi người dùng click vào sản phẩm
-					var productId = event.target.getAttribute('data-product-id');
-					// Thực hiện hành động khi người dùng click vào sản phẩm, ví dụ: chuyển hướng đến trang chi tiết sản phẩm
-					window.location.href = '/Product/Details/' + productId;
 				}
 			});
 
+			function handleKeyPress(event) {
+				// Kiểm tra xem phím đã được ấn có phải là phím "Enter" không (mã ASCII là 13)
+				if (event.keyCode === 13) {
+					// Lấy giá trị từ input và thực hiện tìm kiếm
+					var searchText = event.target.value.trim();
+					searchProducts(searchText);
+				}
+			}
 
-			function showSearchResults(page) {
-				var startIndex = (page - 1) * pageSize;
-				var endIndex = Math.min(startIndex + pageSize, totalResults);
+			function showSearchResults() {
 				var resultList = "";
 				if (currentResults.length > 0) {
-					for (var i = startIndex; i < endIndex; i++) {
+					for (var i = 0; i < currentResults.length; i++) {
 						var item = currentResults[i];
 						resultList += "<div class='product-item'>";
 						resultList += "<a href='/Product/Details/" + item.id + "' class='product-link' data-product-id='" + item.id + "'>";
@@ -673,11 +686,6 @@
 						resultList += "</div>";
 						resultList += "</a>";
 						resultList += "</div>";
-					}
-					if (endIndex < totalResults) {
-						resultList += "<div class='show-more'><button class='show-more'>Show More</button></div>";
-					} else if (endIndex === totalResults) {
-						resultList += "<div class='show-more'><button class='show-all'>Show All</button></div>";
 					}
 					searchResults.innerHTML = resultList;
 					searchResults.style.display = "block";
@@ -691,23 +699,6 @@
 				searchResults.style.display = "none";
 			}
 
-			function showAllResults() {
-				var resultList = "";
-				for (var i = 0; i < currentResults.length; i++) {
-					var item = currentResults[i];
-					resultList += "<div class='product-item'>";
-					resultList += "<a href='/Product/Details/" + item.id + "' class='product-link' data-product-id='" + item.id + "'>";
-					resultList += "<img src='/media/products/" + item.image + "' alt='" + item.name + "' class='product-image'>";
-					resultList += "<div class='product-info'>";
-					resultList += "<h3 class='product-name'>" + item.name + "</h3>";
-					resultList += "<p class='product-price'>Price: " + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + "</p>";
-					resultList += "</div>";
-					resultList += "</a>";
-					resultList += "</div>";
-				}
-				searchResults.innerHTML = resultList;
-				searchResults.style.display = "block";
-			}
 		});
 
 	</script>
