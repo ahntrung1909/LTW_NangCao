@@ -4,18 +4,23 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using BTL.Models;
+using BTL.Repository;
 
 namespace BTL.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
 	public class UserController : Controller
 	{
 		private readonly UserManager<ApplicationUser> _userManager;
-
-		public UserController(UserManager<ApplicationUser> userManager)
+        private readonly DataContext _dataContext;
+        public UserController(UserManager<ApplicationUser> userManager, DataContext context)
 		{
-			_userManager = userManager;
-		}
+			_userManager = userManager; 
+			_dataContext = context;
+        }
 
 		public async Task<IActionResult> Index()
 		{
@@ -51,6 +56,14 @@ namespace BTL.Areas.Admin.Controllers
 
 			return RedirectToAction(nameof(Index));
 		}
+        public async Task<IActionResult> Delete(string Id)
+        {
+            var user = await _dataContext.Users.FindAsync(Id);
 
-	}
+            _dataContext.Users.Remove(user);
+            await _dataContext.SaveChangesAsync();
+            TempData["success"] = "User đã xoá";
+            return RedirectToAction("Index");
+        }
+    }
 }

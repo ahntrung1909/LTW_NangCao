@@ -12,8 +12,8 @@
             <th scope="col">Brands Name</th>
             <th scope="col">Brands Description</th>
             <th scope="col">Brands Slug</th>
-            <th scope="col">Brands Status</th>
-
+@*             <th scope="col">Brands Status</th> *@
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,7 +24,7 @@
                 <td>@item.Name</td>
                 <td>@item.Description</td>
                 <td>@item.Slug</td>
-                <td>
+                @* <td>
                     @if(@item.Status ==1){
                         <span class="text text-success">Hiển thị</span>
                     }
@@ -32,7 +32,7 @@
                     {
                         <span class="text text-danger">Ẩn</span>
                     }
-                </td>
+                </td> *@
 
                 <td>
                     <a asp-action="Edit" class="btn btn-warning btn-sm " asp-controller="Brand" asp-route-Id="@item.Id">Edit</a>

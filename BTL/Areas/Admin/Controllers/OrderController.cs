@@ -7,23 +7,23 @@ using Microsoft.EntityFrameworkCore;
 namespace BTL.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+	[Authorize(Roles = "Admin")]
 	public class OrderController : Controller
-	{
-		private readonly DataContext _dataContext;
-		public OrderController(DataContext context)
-		{
-			_dataContext = context;
-		}
+    {
+        private readonly DataContext _dataContext;
+        public OrderController(DataContext context)
+        {
+            _dataContext = context;
+        }
         public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Orders.ToListAsync());
         }
-		public async Task<IActionResult> ViewOrder(string ordercode)
-		{
-			var DetailOrder = await _dataContext.OrderDetails.Include(od=>od.Product).Where(od=>od.OrderCode== ordercode).ToListAsync();
-			return View(DetailOrder);
-		}
+        public async Task<IActionResult> ViewOrder(string ordercode)
+        {
+            var DetailOrder = await _dataContext.OrderDetails.Include(od => od.Product).Where(od => od.OrderCode == ordercode).ToListAsync();
+            return View(DetailOrder);
+        }
         public async Task<IActionResult> Delete(string orderCode)
         {
             // Tìm tất cả các chi tiết đơn hàng có cùng OrderCode

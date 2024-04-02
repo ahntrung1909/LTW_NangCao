@@ -17,27 +17,47 @@ namespace BTL.Controllers
 		{
 			var userEmail = User.FindFirstValue(ClaimTypes.Email);
 			List<CartItemModel> Cartitems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+
+			// Kiểm tra người dùng đã đăng nhập hay chưa
 			if (userEmail == null)
 			{
 				return RedirectToAction("Login", "Account");
-			}else if (Cartitems.Sum(x=>x.Quantity)<=0)
+			}
+			else if (Cartitems.Sum(x => x.Quantity) <= 0)
 			{
 				TempData["error"] = "Tạo thất bại, giỏ hàng trống";
 				return RedirectToAction("Index", "Cart");
 			}
 			else
 			{
-				var orderCode=Guid.NewGuid().ToString();
+				// Tạo đơn hàng mới
+				var orderCode = Guid.NewGuid().ToString();
 				var orderItem = new OrderModel();
 				orderItem.OrderCode = orderCode;
 				orderItem.UserName = userEmail;
 				orderItem.Status = 1;
 				orderItem.CreatedDate = DateTime.Now;
 				_dataContext.Add(orderItem);
-				_dataContext.SaveChanges();
-				
-				foreach(var cartItem in Cartitems)
+				await _dataContext.SaveChangesAsync();
+
+				// Cập nhật số lượng sản phẩm trong kho sau khi thanh toán
+				foreach (var cartItem in Cartitems)
 				{
+					var product = await _dataContext.Products.FindAsync(cartItem.ProductId);
+
+					// Kiểm tra số lượng sản phẩm trong kho đủ để thực hiện giao dịch hay không
+					if (product.Quantity < cartItem.Quantity)
+					{
+						TempData["error"] = "Không đủ hàng trong kho";
+						return RedirectToAction("Index", "Cart");
+					}
+
+					// Trừ đi số lượng sản phẩm trong kho tương ứng với số lượng trong giỏ hàng
+					product.Quantity -= cartItem.Quantity;
+					_dataContext.Update(product);
+					await _dataContext.SaveChangesAsync();
+
+					// Tạo chi tiết đơn hàng
 					var orderDetail = new OrderDetails();
 					orderDetail.UserName = userEmail;
 					orderDetail.OrderCode = orderCode;
@@ -45,14 +65,16 @@ namespace BTL.Controllers
 					orderDetail.Price = cartItem.Price;
 					orderDetail.Quantity = cartItem.Quantity;
 					_dataContext.Add(orderDetail);
-					_dataContext.SaveChanges();
+					await _dataContext.SaveChangesAsync();
 				}
-				HttpContext.Session.Remove("Cart");
-				TempData["success"] = "Tạo thành công, chờ duyệt đơn hàng";
-				return RedirectToAction("Index","Cart");
 
+				// Xóa giỏ hàng sau khi thanh toán
+				HttpContext.Session.Remove("Cart");
+
+				TempData["success"] = "Tạo thành công, chờ duyệt đơn hàng";
+				return RedirectToAction("Index", "Cart");
 			}
-			return View();
 		}
+
 	}
 }

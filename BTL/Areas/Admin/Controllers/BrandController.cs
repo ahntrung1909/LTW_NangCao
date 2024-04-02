@@ -1,5 +1,6 @@
 ﻿using BTL.Models;
 using BTL.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BTL.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
 	public class BrandController : Controller
 	{
 		private readonly DataContext _dataContext;
@@ -67,41 +69,41 @@ namespace BTL.Areas.Admin.Controllers
            
             return View(brand);
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(BrandModel brand, int Id)
-        {
-            if (ModelState.IsValid)
-            {
-                brand.Slug = brand.Name.Replace(" ", "-");
-                _dataContext.Update(brand);
-                await _dataContext.SaveChangesAsync();
-                TempData["success"] = "Sửa thành công";
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                TempData["error"] = "Model đang lỗi";
-                List<string> errors = new List<string>();
-                foreach (var value in ModelState.Values)
-                {
-                    foreach (var error in value.Errors)
-                    {
-                        errors.Add(error.ErrorMessage);
-                    }
-                }
-                string errorMessage = string.Join("\n", errors);
-                return BadRequest(errorMessage);
-            }
-        }
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Edit(BrandModel category, int Id)
+		{
+			if (ModelState.IsValid)
+			{
+				category.Slug = category.Name.Replace(" ", "-");
+				_dataContext.Update(category);
+				await _dataContext.SaveChangesAsync();
+				TempData["success"] = "Sửa thành công";
+				return RedirectToAction("Index");
+			}
+			else
+			{
+				TempData["error"] = "Model đang lỗi";
+				List<string> errors = new List<string>();
+				foreach (var value in ModelState.Values)
+				{
+					foreach (var error in value.Errors)
+					{
+						errors.Add(error.ErrorMessage);
+					}
+				}
+				string errorMessage = string.Join("\n", errors);
+				return BadRequest(errorMessage);
+			}
+		}
 
-        public async Task<IActionResult> Delete(int Id)
+		public async Task<IActionResult> Delete(int Id)
         {
             BrandModel brand = await _dataContext.Brands.FindAsync(Id);
             
             _dataContext.Brands.Remove(brand);
             await _dataContext.SaveChangesAsync();
-            TempData["error"] = "THương hiệu đã xoá";
+            TempData["success"] = "THương hiệu đã xoá";
             return RedirectToAction("Index");
         }
     }

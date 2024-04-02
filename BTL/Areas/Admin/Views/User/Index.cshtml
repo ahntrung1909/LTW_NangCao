@@ -13,7 +13,8 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Email</th>
-            <th scope="col">Status</th>
+@*             <th scope="col">Status</th> *@
+            <th scope="col">Actions</th>
 
         </tr>
     </thead>
@@ -28,7 +29,7 @@
                 <td>@item.Email</td>
 
                 <td>
-                    @if (!item.LockoutEnabled)
+                    @* @if (!item.LockoutEnabled)
                     {
                         <form method="post" asp-action="ChangeUserStatus" asp-route-userId="@item.Id">
                             <button type="submit" class="btn btn-danger btn-sm">Block</button>
@@ -39,9 +40,9 @@
                         <form method="post" asp-action="ChangeUserStatus" asp-route-userId="@item.Id">
                             <button type="submit" class="btn btn-warning btn-sm">Allow</button>
                         </form>
-                    }
-                        
-                    
+                    } *@
+
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="User" asp-route-Id="@item.Id">Delete</a>
                     
                 </td>
 

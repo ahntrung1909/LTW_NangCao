@@ -1,5 +1,6 @@
 ﻿using BTL.Models;
 using BTL.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BTL.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
 	public class CategoryController : Controller
 	{
 		private readonly DataContext _dataContext;
@@ -103,7 +105,7 @@ namespace BTL.Areas.Admin.Controllers
             
             _dataContext.Categories.Remove(category);
             await _dataContext.SaveChangesAsync();
-            TempData["error"] = "Danh mục đã xoá";
+            TempData["success"] = "Danh mục đã xoá";
             return RedirectToAction("Index");
         }
     }

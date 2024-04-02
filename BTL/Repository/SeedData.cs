@@ -8,7 +8,7 @@ namespace BTL.Repository
 		public static void SeedingData(DataContext _context)
 		{
 			_context.Database.Migrate();
-			if(!_context.Products.Any())
+			if (!_context.Products.Any())
 			{
 				CategoryModel laptop = new CategoryModel { Name = "Laptop", Slug = "laptop", Description = "Laptop, Máy tính sách tay", Status = 1 };
 				CategoryModel pc = new CategoryModel { Name = "PC", Slug = "pc", Description = "Máy tính để bàn", Status = 1 };
@@ -20,7 +20,7 @@ namespace BTL.Repository
 				BrandModel acer = new BrandModel { Name = "Acer", Slug = "acer", Description = "Hãng Acer", Status = 1 };
 				BrandModel lenovo = new BrandModel { Name = "Lenovo", Slug = "lenovo", Description = "Hãng Lenovo", Status = 1 };
 				BrandModel dell = new BrandModel { Name = "Dell", Slug = "dell", Description = "Hãng Dell", Status = 1 };
-				BrandModel hp = new BrandModel { Name = "HP", Slug = "msi", Description = "Hãng HP", Status = 1 };
+				BrandModel hp = new BrandModel { Name = "HP", Slug = "hp", Description = "Hãng HP", Status = 1 };
 
 				_context.Products.AddRange(
 
@@ -33,7 +33,9 @@ namespace BTL.Repository
 						Image = "1.png",
 						Category = laptop,
 						Brand = apple,
-						Price = 36999000
+						Price = 36999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -45,7 +47,9 @@ namespace BTL.Repository
 						Image = "2.jpg",
 						Category = laptop,
 						Brand = asus,
-						Price = 10499000
+						Price = 10499000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -57,7 +61,9 @@ namespace BTL.Repository
 						Image = "3.jpg",
 						Category = laptop,
 						Brand = acer,
-						Price = 15999000
+						Price = 15999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -69,7 +75,9 @@ namespace BTL.Repository
 						Image = "4.jpg",
 						Category = laptop,
 						Brand = lenovo,
-						Price = 27999000
+						Price = 27999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -81,7 +89,9 @@ namespace BTL.Repository
 						Image = "5.jpg",
 						Category = laptop,
 						Brand = dell,
-						Price = 44349000
+						Price = 44349000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -93,7 +103,9 @@ namespace BTL.Repository
 						Image = "6.jpg",
 						Category = laptop,
 						Brand = hp,
-						Price = 23999000
+						Price = 23999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -105,7 +117,9 @@ namespace BTL.Repository
 						Image = "7.jpg",
 						Category = pc,
 						Brand = asus,
-						Price = 26999000
+						Price = 26999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -117,7 +131,9 @@ namespace BTL.Repository
 						Image = "8.jpg",
 						Category = ipad,
 						Brand = apple,
-						Price = 19999000
+						Price = 19999000,
+						Quantity = 10,
+						Status = 1,
 					},
 					new ProductModel
 					{
@@ -128,7 +144,9 @@ namespace BTL.Repository
 						Image = "9.jpg",
 						Category = services,
 						Brand = asus,
-						Price = 5999000
+						Price = 5999000,
+						Quantity = 10,
+						Status = 1,
 					},
 
 					new ProductModel
@@ -140,7 +158,9 @@ namespace BTL.Repository
 						Image = "10.jpg",
 						Category = services,
 						Brand = asus,
-						Price = 39299000
+						Price = 39299000,
+						Quantity = 10,
+						Status = 1,
 					}
 				);
 

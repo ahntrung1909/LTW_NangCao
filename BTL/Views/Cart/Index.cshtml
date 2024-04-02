@@ -65,12 +65,10 @@
 									<p>@iteam.Price.ToString("#,##0") VNĐ</p>
 								</td>
 								<td>
-
 									<a class="btn btn-default btn-sm" asp-controller="Cart" asp-action="Increase" asp-route-id="@iteam.ProductId"> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="@iteam.Quantity" autocomplete="off" size="2">
+									<input class="cart_quantity_input" type="text" name="quantity" value="@iteam.Quantity" autocomplete="off" size="2" onchange="updateQuantity(@iteam.ProductId, this.value)">
 									<a class="btn btn-success btn-sm" asp-controller="Cart" asp-action="Decrease" asp-route-id="@iteam.ProductId"> - </a>
 									<a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Remove" asp-route-id="@iteam.ProductId"> Remove </a>
-
 								</td>
 								<td class="cart_total">
 									<p class="cart_total_price">@Model.CartItems.Where(x => x.ProductId == iteam.ProductId).Sum(x => x.Quantity * x.Price).ToString("#,##0")</p>
@@ -97,4 +95,35 @@
 			</table>
 		</div>
 	</div>
-</section> <!--/#cart_items-->
+</section> 
+@section scripts {
+	<script>
+		function updateQuantity(productId, quantity) {
+			// Check if the entered quantity is greater than the available quantity
+			fetch(`/Cart/CheckQuantity?productId=${productId}&quantity=${quantity}`)
+				.then(response => response.json())
+				.then(data => {
+					if (data.result) {
+						// If quantity is valid, update the quantity in the cart
+						fetch(`/Cart/UpdateQuantity?productId=${productId}&quantity=${quantity}`, {
+							method: 'POST'
+						})
+							.then(response => {
+								if (response.ok) {
+									location.reload();
+								}
+							})
+							.catch(error => {
+								console.error('Error updating quantity:', error);
+							});
+					} else {
+						// If quantity is invalid, show warning message
+						alert('Số lượng vượt quá số lượng hiện có!');
+					}
+				})
+				.catch(error => {
+					console.error('Error checking quantity:', error);
+				});
+		}
+	</script>
+}<!--/#cart_items-->

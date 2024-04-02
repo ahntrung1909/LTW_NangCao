@@ -4,8 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BTL.Models
 {
-    public class ProductModel
-    {
+	public class ProductModel
+	{
 		[Key]
 		public int Id { get; set; }
 
@@ -18,13 +18,15 @@ namespace BTL.Models
 		public string Slug { get; set; }
 
 		public decimal Price { get; set; }
-
+		public int Quantity { get; set; }
 		public int BrandId { get; set; }
 		public int CategoryId { get; set; }
 		public CategoryModel Category { get; set; }
 		public BrandModel Brand { get; set; }
 
 		public string Image { get; set; }
+
+		public int Status { get; set; }
 
 		[NotMapped]
 		[FileExtension]
