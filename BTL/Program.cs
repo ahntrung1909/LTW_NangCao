@@ -51,9 +51,15 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+
+
 app.MapControllerRoute(
 	name: "Areas",
 	pattern: "{area:exists}/{controller=Product}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "category",
@@ -65,9 +71,6 @@ app.MapControllerRoute(
     pattern: "/brand/{Slug?}",
     defaults: new { controller = "Brand", action = "Index" });
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
 //Seeding data
 var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<DataContext>();
 SeedData.SeedingData(context);

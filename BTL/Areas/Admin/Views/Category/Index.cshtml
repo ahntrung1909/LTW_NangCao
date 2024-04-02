@@ -12,7 +12,8 @@
             <th scope="col">Category Name</th>
             <th scope="col">Category Description</th>
             <th scope="col">Category Slug</th>
-            <th scope="col">Category Status</th>
+          @*   <th scope="col">Category Status</th> *@
+            <th scope="col">Actions</th>
 
         </tr>
     </thead>
@@ -24,7 +25,7 @@
                 <td>@item.Name</td>
                 <td>@item.Description</td>
                 <td>@item.Slug</td>
-                <td>
+                @* <td>
                     @if(@item.Status ==1){
                         <span class="text text-success">Hiển thị</span>
                     }
@@ -32,7 +33,7 @@
                     {
                         <span class="text text-danger">Ẩn</span>
                     }
-                </td>
+                </td> *@
 
                 <td>
                     <a asp-action="Edit" class="btn btn-warning btn-sm " asp-controller="Category" asp-route-Id="@item.Id">Edit</a>

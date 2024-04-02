@@ -7,7 +7,7 @@ namespace BTL.Models
 		[Key]
 		public int Id { get; set; }
 
-		[Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Tên thương hiệu")]
+		[Required, MinLength(1, ErrorMessage = "Yêu cầu nhập Tên thương hiệu")]
 		public string Name { get; set; }
 
 		[Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Mô tả thương hiệu")]
